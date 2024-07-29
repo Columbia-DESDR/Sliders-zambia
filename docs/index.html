@@ -3,28 +3,37 @@
 
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" href="/desdr-zambia-demo/favicon.png" />
+	<link rel="icon" href="./favicon.png" />
 	<meta name="viewport" content="width=device-width" />
-	<meta http-equiv="content-security-policy" content="">
-		<link rel="modulepreload" href="/desdr-zambia-demo/internal/immutable/start-e7512931.js">
-		<link rel="modulepreload" href="/desdr-zambia-demo/internal/immutable/chunks/index-0f3c99ad.js">
-		<link rel="modulepreload" href="/desdr-zambia-demo/internal/immutable/chunks/singletons-32c7fede.js">
-		<link rel="modulepreload" href="/desdr-zambia-demo/internal/immutable/chunks/index-f24a3153.js">
+	
+		<link rel="modulepreload" href="./internal/immutable/entry/start.57169e33.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.b0821638.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/singletons.1709d26c.js">
+		<link rel="modulepreload" href="./internal/immutable/chunks/index.f919a3a8.js">
+		<link rel="modulepreload" href="./internal/immutable/entry/app.e18ea318.js">
 </head>
 
 <body>
 	<div>
-		<script type="module" data-sveltekit-hydrate="45h">
-			import { start } from "/desdr-zambia-demo/internal/immutable/start-e7512931.js";
+			<script>
+				{
+					__sveltekit_1x2n6gv = {
+						assets: "/Sliders-zambia",
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
 
-			start({
-				env: {},
-				hydrate: null,
-				paths: {"base":"/desdr-zambia-demo","assets":"/desdr-zambia-demo"},
-				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
-				trailing_slash: "never"
-			});
-		</script></div>
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("./internal/immutable/entry/start.57169e33.js"),
+						import("./internal/immutable/entry/app.e18ea318.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
 </body>
 
 </html>
